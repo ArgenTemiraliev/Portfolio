@@ -43,15 +43,15 @@ function Contact() {
         <h2 className="text-4xl font-extrabold mb-6">Свяжитесь с нами</h2>
         <p className="text-lg opacity-80 mb-8">Оставьте сообщение, и мы свяжемся с вами в ближайшее время.</p>
               <div className="flex flex-col md:flex-row justify-between items-start gap-8">
-                  <div className="">
-                      {applications.map((application, index) => 
-                          <div className="space-y-6 text-left py-4 " key={index}>
-                                <a href={application.applicationURL} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2  text-blue-400 hover:text-white transition">
-                                  <span className='text-2xl '>{ application.aplicationName }</span>
-                                </a>       
-                          </div>
-                    )}             
-                  </div>
+              <div className="text-center m-auto">
+  {applications.map((application, index) => (
+    <div className="py-4 mb-3 border-b border-gray-300">
+      <a href={application.applicationURL} target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-400 hover:text-white transition-colors"  > {application.aplicationName}</a>
+    </div>
+  ))}
+</div>
+
+
          
           <form className="w-full max-w-md space-y-4" onSubmit={handleSubmit}>
             <input type="text" placeholder="Ваше имя" className="w-full p-4 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"value={name}  onChange={(e) => setName(e.target.value)} />
