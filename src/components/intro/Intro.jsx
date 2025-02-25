@@ -1,5 +1,5 @@
 import React from 'react';
-import temiraliev from '../../assets/ARGENTEMIRALIEV.jpg';
+import temiraliev from '../../assets/ARGEN.jpg';
 
 function Intro() {
   return (
@@ -39,7 +39,7 @@ function Intro() {
               </a>
             </div>
           </div>
-          <div className="w-48 h-48 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-blue-500 transform transition-transform duration-500 ease-in-out hover:scale-110 hover:rotate-6">
+          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-blue-500 transform transition-transform duration-500 ease-in-out hover:scale-110 hover:rotate-6">
             <img
               src={temiraliev} 
               alt="Argen Temiraliev"
