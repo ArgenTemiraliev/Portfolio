@@ -28,10 +28,10 @@ function Header() {
         </div>
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} mt-4 transition-all duration-300`}>
           <ul className="flex flex-col space-y-4 text-center">
-            <li><a href="#" className="hover:text-white transition">Home</a></li>
-            <li><a href="#" className="hover:text-white transition">About</a></li>
-            <li><a href="#" className="hover:text-white transition">Contact</a></li>
-            <li><a href="#" className="hover:text-white transition">Projects</a></li>
+            <li><a href="#main" className="hover:text-white transition">Home</a></li>
+            <li><a href="#about" className="hover:text-white transition">About</a></li>
+            <li><a href="#project" className="hover:text-white transition">Contact</a></li>
+            <li><a href="#contact" className="hover:text-white transition">Projects</a></li>
           </ul>
         </div>
       </div>
