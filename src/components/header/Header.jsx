@@ -8,7 +8,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-gradient-to-r from-blue-900 to-black text-blue-300">
+    <header id='main' className="bg-gradient-to-r from-blue-900 to-black text-blue-300">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="logo">
@@ -16,10 +16,10 @@ function Header() {
           </div>
           <div className="content hidden md:block">
             <ul className="flex space-x-8">
-              <li><a href="#" className="hover:text-white transition">Home</a></li>
-              <li><a href="#" className="hover:text-white transition">About</a></li>
-              <li><a href="#" className="hover:text-white transition">Projects</a></li>
-              <li><a href="#" className="hover:text-white transition">Contact</a></li>
+              <li><a href="#main" className="hover:text-white transition">Home</a></li>
+              <li><a href="#about" className="hover:text-white transition">About</a></li>
+              <li><a href="#project" className="hover:text-white transition">Projects</a></li>
+              <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
             </ul>
           </div>
           <div className="icon-content md:hidden text-blue-400 text-2xl cursor-pointer" onClick={toggleMenu}>

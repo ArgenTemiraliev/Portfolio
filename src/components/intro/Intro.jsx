@@ -3,7 +3,7 @@ import temiraliev from '../../assets/ARGEN.jpg';
 
 function Intro() {
   return (
-    <section className="bg-gradient-to-r from-black via-gray-900 to-indigo-800 text-white py-16 px-10">
+    <section id='about' className="bg-gradient-to-r from-black via-gray-900 to-indigo-800 text-white py-16 px-10">
       <div className="container mx-auto flex items-center justify-center px-4 h-[80vh] ">
         <div className="flex flex-col lg:flex-row items-center justify-around lg:items-start w-full">
           <div className="text-center lg:text-left mb-8 lg:mb-0 lg:mr-8">

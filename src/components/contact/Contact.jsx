@@ -38,26 +38,23 @@ function Contact() {
       };
 
   return (
-    <section className="bg-gradient-to-r from-black via-gray-800 to-indigo-700 text-white py-16 px-6 text-center">
+    <section id='contact' className="bg-gradient-to-r from-black via-gray-800 to-indigo-700 text-white py-16 px-6 text-center">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-extrabold mb-6">Свяжитесь с нами</h2>
-        <p className="text-lg opacity-80 mb-8">Оставьте сообщение, и мы свяжемся с вами в ближайшее время.</p>
+        <h2 className="text-4xl font-extrabold mb-6">Contact us</h2>
+        <p className="text-lg opacity-80 mb-8">Leave a message and we will contact you shortly.</p>
               <div className="flex flex-col md:flex-row justify-between items-start gap-8">
               <div className="text-center m-auto">
-  {applications.map((application, index) => (
-    <div className="py-4 mb-3 border-b border-gray-300">
-      <a href={application.applicationURL} target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-400 hover:text-white transition-colors"  > {application.aplicationName}</a>
-    </div>
-  ))}
-</div>
-
-
-         
+              {applications.map((application, index) => (
+                <div className="py-4 mb-3 border-b border-gray-300">
+                  <a href={application.applicationURL} target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-400 hover:text-white transition-colors"  > {application.aplicationName}</a>
+                </div>
+              ))}
+            </div>         
           <form className="w-full max-w-md space-y-4" onSubmit={handleSubmit}>
-            <input type="text" placeholder="Ваше имя" className="w-full p-4 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"value={name}  onChange={(e) => setName(e.target.value)} />
-            <input type="email" placeholder="Ваш email" className="w-full p-4 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500" value={email} onChange={(e) => setEmail(e.target.value)}  />
-            <textarea placeholder="Ваше сообщение" rows="5" className="w-full p-4 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
-            <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 rounded-lg transition">Отправить</button>
+            <input type="text" placeholder="Name" className="w-full p-4 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"value={name}  onChange={(e) => setName(e.target.value)} />
+            <input type="email" placeholder="email" className="w-full p-4 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500" value={email} onChange={(e) => setEmail(e.target.value)}  />
+            <textarea placeholder="Your message" rows="5" className="w-full p-4 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
+            <button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 rounded-lg transition">Send</button>
           </form>
         </div>
       </div>
