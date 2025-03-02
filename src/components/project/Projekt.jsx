@@ -2,12 +2,17 @@ import React from 'react';
 import imgProject1 from '../../assets/project1.png';
 import imgProject2 from '../../assets/project2.png';
 import imgProject3 from '../../assets/project3.png';
+import imgProject4 from '../../assets/project4.png';
+
+
 import { motion } from 'framer-motion';
+import { img } from 'framer-motion/client';
 
 const projekts = [
   { name: 'Java Script', text: 'A modern JavaScript web project with an interactive interface.', img: imgProject1, link: 'https://java-script-mauve.vercel.app/' },
   { name: 'QR Menu', text: 'QR menu for restaurants with easy navigation and quick access.', img: imgProject2, link: 'https://beknazar007.github.io/qr-menu-website/' },
   { name: 'Sport Store', text: 'Online store of sporting goods with catalog and filtering.', img: imgProject3, link: 'https://github.com/Abaijan/sports' },
+  {name: "Coffee Shop" , tetx:"The project is a demo website for a coffee shop, showcasing its offerings, atmosphere, and customer experiences.", img: imgProject4 , link :"https://coffee-seven-beryl.vercel.app/"}
 ];
 
 function Projekt() {
@@ -22,7 +27,7 @@ function Projekt() {
         </p>
       </div>
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           {projekts.map((project, index) => (
             <motion.div
               key={index}
