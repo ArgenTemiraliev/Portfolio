@@ -12,7 +12,7 @@ const projekts = [
   { name: 'Java Script', text: 'A modern JavaScript web project with an interactive interface.', img: imgProject1, link: 'https://java-script-mauve.vercel.app/' },
   { name: 'QR Menu', text: 'QR menu for restaurants with easy navigation and quick access.', img: imgProject2, link: 'https://beknazar007.github.io/qr-menu-website/' },
   { name: 'Sport Store', text: 'Online store of sporting goods with catalog and filtering.', img: imgProject3, link: 'https://github.com/Abaijan/sports' },
-  {name: "Coffee Shop" , tetx:"The project is a demo website for a coffee shop, showcasing its offerings, atmosphere, and customer experiences.", img: imgProject4 , link :"https://coffee-seven-beryl.vercel.app/"}
+  {name: "Coffee Shop" , text:"The project is a demo website for a coffee shop, showcasing its offerings, atmosphere, and customer experiences.", img: imgProject4 , link :"https://coffee-seven-beryl.vercel.app/"}
 ];
 
 function Projekt() {
